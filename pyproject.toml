@@ -10,6 +10,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prompt = "^0.4.1"
 
 
 [build-system]
@@ -18,3 +19,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+welcome-user = "brain_games.scripts.brain_games:welcome_user"
