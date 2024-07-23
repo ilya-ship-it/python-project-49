@@ -12,7 +12,7 @@ def is_even(num):
 def main():
     name = welcome_msg()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    for i in range(3):
+    for _ in range(3):
         question = random.randint(1, 100)
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
