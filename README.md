@@ -3,3 +3,5 @@
 <a href="https://codeclimate.com/github/ilya-ship-it/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/27aa450a3d35888fab09/maintainability" /></a>
 
 [![asciicast](https://asciinema.org/a/IuMPOqcobLtVXsHTovNerQNAS.svg)](https://asciinema.org/a/IuMPOqcobLtVXsHTovNerQNAS)
+
+<a href="https://asciinema.org/a/7mnLMIXNuNJ9nLYZWNVs04sAk" target="_blank"><img src="https://asciinema.org/a/7mnLMIXNuNJ9nLYZWNVs04sAk.svg" /></a>
