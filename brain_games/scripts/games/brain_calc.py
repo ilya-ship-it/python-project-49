@@ -5,12 +5,12 @@ from brain_games.scripts.engine import incorrect_answer
 
 
 def get_question():
-        operations = ['+', '-', '*']
-        operation = random.choice(operations)
-        x = random.randint(1, 100) 
-        y = random.randint(1, 100) 
-        question = (f"{x} {operation} {y}")
-        return question
+    operations = ['+', '-', '*']
+    operation = random.choice(operations)
+    x = random.randint(1, 100)
+    y = random.randint(1, 100)
+    question = (f"{x} {operation} {y}")
+    return question
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
         question = get_question()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
-        correct_answer = str(eval(question))  
+        correct_answer = str(eval(question))
         if answer == correct_answer:
             print('Correct!')
             continue
