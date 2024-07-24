@@ -4,7 +4,7 @@ import prompt
 def incorrect_answer(answer, correct_answer, name):
     print(
         f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
-        f"Let's try again, {name}"
+        f"Let's try again, {name}!"
     )
 
 
