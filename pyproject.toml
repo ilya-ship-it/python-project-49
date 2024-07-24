@@ -1,19 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "1.0.0"
-
-description = """
-Brain Games is a set of five console games inspired by popular mobile apps designed to train your brain. 
-Each game poses questions that require correct answers. After three correct answers, the game is considered completed. 
-Incorrect answers end the game, and the player is prompted to try again. The games included are:
-
-1. Calculator: Solve arithmetic expressions.
-2. Progression: Find the missing number in a sequence.
-3. Even Number: Determine if a number is even.
-4. Greatest Common Divisor: Identify the greatest common divisor of given numbers.
-5. Prime Number: Check if a number is prime.
-"""
-
+description = "Brain Games is a set of five console games inspired by popular mobile apps designed to train your brain. Each game poses questions that require correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game, and the player is prompted to try again. The games included are: 1. Calculator: Solve arithmetic expressions. 2. Progression: Find the missing number in a sequence. 3. Even Number: Determine if a number is even. 4. Greatest Common Divisor: Identify the greatest common divisor of given numbers. 5. Prime Number: Check if a number is prime."
 authors = ["Tulupov Ilya <Tulupov.2712@gmail.com>"]
 packages = [
   { include = "brain_games" },
