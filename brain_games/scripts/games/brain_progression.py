@@ -1,5 +1,5 @@
 import random
-from brain_games.scripts.brain_games import main as ask_name
+from brain_games.cli import welcome_user
 from brain_games.scripts.engine import ask_question
 
 
@@ -20,7 +20,7 @@ def get_question(progression, correct_answer):
 
 
 def main():
-    name = ask_name()
+    name = welcome_user()
     print('What number is missing in the progression?')
     for _ in range(3):
         progression = get_progression()
