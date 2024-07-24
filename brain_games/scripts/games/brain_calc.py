@@ -26,4 +26,4 @@ def main():
             continue
         else:
             incorrect_answer(answer, correct_answer, name)
-        return
+            return
