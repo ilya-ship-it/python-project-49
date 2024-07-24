@@ -1,7 +1,6 @@
-import prompt
 import random
-from brain_games.scripts.brain_games import main as welcome_msg
-from brain_games.scripts.engine import incorrect_answer
+from brain_games.scripts.brain_games import main as ask_name
+from brain_games.scripts.engine import ask_question
 
 
 def get_progression():
@@ -21,19 +20,12 @@ def get_question(progression, correct_answer):
 
 
 def main():
-    name = welcome_msg()
+    name = ask_name()
     print('What number is missing in the progression?')
     for _ in range(3):
         progression = get_progression()
         correct_answer = random.choice(progression)
         question = get_question(progression, correct_answer)
-        print(f"Question: {str(question)}")
-        answer = prompt.string('Your answer: ')
-        correct_answer = str(correct_answer)
-        if answer == correct_answer:
-            print('Correct!')
-            continue
-        else:
-            incorrect_answer(answer, correct_answer, name)
+        if not ask_question(question, correct_answer, name):
             return
     print(f"Congratulations, {name}")
