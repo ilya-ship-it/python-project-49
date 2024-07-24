@@ -1,5 +1,5 @@
 import random
-from brain_games.scripts.brain_games import main as ask_name
+from brain_games.cli import welcome_user
 from brain_games.scripts.engine import ask_question
 
 
@@ -13,7 +13,7 @@ def get_question():
 
 
 def main():
-    name = ask_name()
+    name = welcome_user()
     print('What is the result of the expression?')
     for _ in range(3):
         question = get_question()

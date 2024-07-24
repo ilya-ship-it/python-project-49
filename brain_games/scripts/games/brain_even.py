@@ -1,5 +1,5 @@
 import random
-from brain_games.scripts.brain_games import main as ask_name
+from brain_games.cli import welcome_user
 from brain_games.scripts.engine import ask_question
 
 
@@ -9,7 +9,7 @@ def get_correct_answer(question):
 
 
 def main():
-    name = ask_name()
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         question = random.randint(1, 100)
