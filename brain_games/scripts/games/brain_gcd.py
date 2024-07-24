@@ -10,7 +10,7 @@ def main():
     for _ in range(3):
         x = random.randint(1, 100)
         y = random.randint(1, 100)
-        question = (x, y)
+        question = f"{x} {y}"
         correct_answer = gcd(x, y)
         if not ask_question(question, correct_answer, name):
             return
