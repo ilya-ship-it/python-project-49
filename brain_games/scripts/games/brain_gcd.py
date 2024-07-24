@@ -14,4 +14,4 @@ def main():
         correct_answer = gcd(x, y)
         if not ask_question(question, correct_answer, name):
             return
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")

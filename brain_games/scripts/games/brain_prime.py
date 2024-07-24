@@ -20,4 +20,4 @@ def main():
         correct_answer = get_correct_answer(question)
         if not ask_question(question, correct_answer, name):
             return
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")
