@@ -1,6 +1,9 @@
 import random
 
 
+GAME_DESCRIPTION = 'What number is missing in the progression?'
+
+
 def get_progression():
     start = random.randint(1, 20)
     step = random.randint(1, 10)
