@@ -1,11 +1,5 @@
 import prompt
-
-
-def incorrect_answer(answer, correct_answer, name):
-    print(
-        f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
-        f"Let's try again, {name}!"
-    )
+from brain_games.cli import welcome_user
 
 
 def ask_question(question, correct_answer, name):
@@ -16,5 +10,19 @@ def ask_question(question, correct_answer, name):
         print('Correct!')
         return True
     else:
-        incorrect_answer(answer, correct_answer, name)
+        print(
+        f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
+        f"Let's try again, {name}!"
+        )
         return False
+
+
+def run_game(game, GAME_DESCRIPTION):
+    name = welcome_user()
+    print(GAME_DESCRIPTION)
+    ROUNDS_AMOUNT = 3
+    for _ in range(ROUNDS_AMOUNT):
+        question, correct_answer = game()
+        if not ask_question(question, correct_answer, name):
+                break
+    print(f'Congratulations, {name}!')

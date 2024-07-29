@@ -1,7 +1,7 @@
 import random
-from brain_games.cli import welcome_user
-from brain_games.scripts.engine import ask_question
 
+
+GAME_DESCRIPTION = 'What is the result of the expression?'
 
 def get_question():
     operations = ['+', '-', '*']
@@ -13,11 +13,6 @@ def get_question():
 
 
 def main():
-    name = welcome_user()
-    print('What is the result of the expression?')
-    for _ in range(3):
         question = get_question()
         correct_answer = eval(question)
-        if not ask_question(question, correct_answer, name):
-            return
-    print(f"Congratulations, {name}!")
+        return question, correct_answer

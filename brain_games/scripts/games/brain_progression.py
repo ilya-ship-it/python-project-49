@@ -1,13 +1,13 @@
 import random
-from brain_games.cli import welcome_user
-from brain_games.scripts.engine import ask_question
 
+
+GAME_DESCRIPTION = 'What number is missing in the progression?'
 
 def get_progression():
     start = random.randint(1, 20)
     step = random.randint(1, 10)
-    progression_length = 10
-    end = start + step * progression_length
+    PROGRESSION_LENGTH = 10
+    end = start + step * PROGRESSION_LENGTH
     progression = list(range(start, end, step))
     return progression
 
@@ -20,12 +20,7 @@ def get_question(progression, correct_answer):
 
 
 def main():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-    for _ in range(3):
         progression = get_progression()
         correct_answer = random.choice(progression)
         question = get_question(progression, correct_answer)
-        if not ask_question(question, correct_answer, name):
-            return
-    print(f"Congratulations, {name}!")
+        return question, correct_answer
