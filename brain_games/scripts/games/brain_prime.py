@@ -10,10 +10,10 @@ GAME_DESCRIPTION = (
 def get_correct_answer(question):
     if question == 1:
         return 'no'
-    if not (question % 2 == 0 or question % 3 == 0) or (question == 2):
-        return 'yes'
-    else:
-        return 'no'
+    for i in range(2, int(question ** 0.5) + 1):
+        if question % i == 0:
+            return 'no'
+    return 'yes'
 
 
 def main():
