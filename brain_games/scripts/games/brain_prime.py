@@ -1,8 +1,6 @@
 import random
 
 
-GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
 def get_correct_answer(question):
     if question == 1:
         return 'no'

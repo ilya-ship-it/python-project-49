@@ -24,5 +24,5 @@ def run_game(game, GAME_DESCRIPTION):
     for _ in range(ROUNDS_AMOUNT):
         question, correct_answer = game()
         if not ask_question(question, correct_answer, name):
-                break
+                return
     print(f'Congratulations, {name}!')

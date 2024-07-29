@@ -1,8 +1,6 @@
 import random
 
 
-GAME_DESCRIPTION = 'What is the result of the expression?'
-
 def get_question():
     operations = ['+', '-', '*']
     operation = random.choice(operations)
