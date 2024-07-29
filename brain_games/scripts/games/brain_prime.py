@@ -11,6 +11,6 @@ def get_correct_answer(question):
 
 
 def main():
-        question = random.randint(1, 100)
-        correct_answer = get_correct_answer(question)
-        return question, correct_answer
+    question = random.randint(1, 100)
+    correct_answer = get_correct_answer(question)
+    return question, correct_answer

@@ -11,8 +11,9 @@ def ask_question(question, correct_answer, name):
         return True
     else:
         print(
-        f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
-        f"Let's try again, {name}!"
+            f"{answer} is wrong answer ;(. "
+            f"Correct answer was {correct_answer}.\n"
+            f"Let's try again, {name}!"
         )
         return False
 
@@ -24,5 +25,5 @@ def run_game(game, GAME_DESCRIPTION):
     for _ in range(ROUNDS_AMOUNT):
         question, correct_answer = game()
         if not ask_question(question, correct_answer, name):
-                return
+            return
     print(f'Congratulations, {name}!')

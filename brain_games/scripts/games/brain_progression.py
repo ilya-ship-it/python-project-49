@@ -18,7 +18,7 @@ def get_question(progression, correct_answer):
 
 
 def main():
-        progression = get_progression()
-        correct_answer = random.choice(progression)
-        question = get_question(progression, correct_answer)
-        return question, correct_answer
+    progression = get_progression()
+    correct_answer = random.choice(progression)
+    question = get_question(progression, correct_answer)
+    return question, correct_answer

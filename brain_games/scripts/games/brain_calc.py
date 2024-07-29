@@ -11,6 +11,6 @@ def get_question():
 
 
 def main():
-        question = get_question()
-        correct_answer = eval(question)
-        return question, correct_answer
+    question = get_question()
+    correct_answer = eval(question)
+    return question, correct_answer
