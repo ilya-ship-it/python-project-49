@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from brain_games.engine import run_game
-import brain_games.scripts.games.brain_calc as game
+import brain_games.games.brain_calc as game
 
 
 def main():
